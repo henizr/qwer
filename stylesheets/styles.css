@@ -1,0 +1,93 @@
+@font-face{
+    font-family: 'lakeshore';
+    src: url('../fonts/lakeshore-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+    font-family: 'airstreamregular';
+    src: url('../fonts/Airstream-webfont.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+
+html, body{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    background: rgb(149, 194, 215);
+}
+.thumbnail-title {
+    display: block;
+    margin: 0;
+    padding: 4px 10px;
+    background: rgb(96, 125, 139);
+    color: rgb(202, 238, 255);
+    font-size: 18px;
+}
+a[href="#"]{
+    text-decoration: none;
+}
+.thumbnail-image {
+    width: 100%;
+    display: block;
+}
+.thumbnail-item{
+    display: inline-block;
+    min-width: 120px;
+    max-width: 120px;
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+.thumbnail-list {
+    flex: 0 1 auto;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow-x: auto;    
+    list-style: none;
+    padding: 0;
+}
+.logo-text {
+    background: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'lakeshore';
+    font-weight: normal;
+    font-size: 37px;
+}
+.detail-image {
+    width: 90%;
+}
+.main-header{
+    flex: 0 1 auto;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.detail-image-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-image-frame {
+    position: relative;
+    text-align: center;
+}
+.detail-image-title {
+    font-family: 'airstreamregular';
+    color: white;
+    text-shadow: rgb(0 0 0 / 90%) 1px 2px 9px;
+    font-size: 78px;
+    position: absolute;
+    bottom: 6px;
+    left: 30px;
+}
